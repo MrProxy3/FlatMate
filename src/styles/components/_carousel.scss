@@ -1,0 +1,32 @@
+.carousel-section {
+  @include container(100%);
+  background: #52ad81;
+  .wrapper {
+
+    .item {
+
+      .carousel-header,
+      .carousel-text {
+        width: 100%;
+        color: #fff;
+        font: normal 56px Roboto, sans-serif;
+      }
+
+      .carousel-header {
+        margin: 10% 0;
+        text-align: center;
+      }
+
+      .carousel-text {
+        display: block;
+        font-weight: 200;
+        font-size: 30px;
+        line-height: 2em;
+      }
+
+      .carousel-image {
+        width: 100%;
+      }
+    }
+  }
+}

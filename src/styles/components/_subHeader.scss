@@ -1,0 +1,11 @@
+.sub {
+  background: #e9eaed;
+
+  &-header {
+    @include span(12 of 12);
+    padding: 30px 0;
+    text-align: center;
+    font: normal 43px Roboto, sans-serif;
+    color: #4b596c;
+  }
+}

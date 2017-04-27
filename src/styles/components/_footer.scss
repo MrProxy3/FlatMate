@@ -1,0 +1,71 @@
+.footer-section {
+  background: #2a2d33;
+
+
+  .footer {
+    height: 127px;
+    position: relative;
+
+    &-logo, &-login {
+      height: inherit;
+    }
+
+    &-logo {
+      @include span(6 of 12);
+      & > .logo {
+        position: absolute;
+        text-decoration: none;
+        height: 34px;
+        font-size: 28px;
+        margin-top: -23px;
+
+        .designText {
+          color: #8d8d8d;
+          font: normal 18px Roboto, sans-serif;
+
+          .website {
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    &-icons {
+      @include span(6 at 7);
+      position: absolute;
+      top: 50%;
+      margin-top: -25px;
+      display: inline-block;
+      text-align: right;
+
+      & > .Icon {
+        text-align: center;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 3px solid #454648;
+        border-radius: 50%;
+        background: #2f3338;
+        margin-left: 10%;
+
+        & > .fa {
+          font-size: 20px;
+        }
+
+        & > .fa-twitter,
+        & > .fa-facebook {
+          line-height: 48px;
+          margin: 0;
+        }
+
+        & > .fa-twitter {
+          color: #656566;
+        }
+
+        & > .fa-facebook {
+          color: #656566;
+        }
+      }
+    }
+  }
+}

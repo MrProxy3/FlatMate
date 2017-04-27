@@ -1,0 +1,45 @@
+.subhero {
+  height: 400px;
+  display: block;
+
+  .subhero-img,
+  .subhero-text,
+  .subhero-icons {
+    padding: 100px 0;
+  }
+
+  .subhero-img {
+    @include span(3 of 12);
+    .document-img {
+      width: 100%;
+      max-width: 230px;
+      margin-left: 13%;
+    }
+  }
+
+
+  .subhero-text {
+    @include span(5 of 12 at 2 isolate);
+
+    .page-Header {
+      font: normal 40px RobotoSlab, serif;
+      color: #37414e;
+    }
+
+    .page-text {
+      font: normal 20px/2 Roboto, sans-serif  ;
+      color: #4b596c;
+    }
+  }
+
+  .subhero-icons {
+    @include span(2 of 12 at 8 isolate);
+    .pencil {
+      margin-top: 15%;
+      margin-bottom: 30%;
+    }
+    .facebook {
+      background: transparent;
+    }
+  }
+}

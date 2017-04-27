@@ -1,0 +1,23 @@
+.Icon {
+  width: 75px;
+  height: 75px;
+  border: 3px solid #67bf95;
+  border-radius: 50%;
+  background: #67bf95;
+
+  &>.fa {
+    font-size: 35px;
+  }
+
+  &>.fa-pencil {
+    line-height: 70px;
+    margin-left: 20px;
+    color: #fff;
+  }
+
+  &>.fa-facebook {
+    line-height: 75px;
+    margin-left: 23px;
+    color: #67bf95;
+  }
+}

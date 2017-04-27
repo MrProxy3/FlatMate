@@ -1,0 +1,28 @@
+$btnHeight: 39px;
+$loginColorText: #cad1db;
+
+.header-login {
+  position: relative;
+  top: 50%;
+  margin-top: -23px;
+
+  .login-text,
+  .login-btn {
+    display: inline-block;
+  }
+
+  .login-text {
+    font: 200 20px Roboto;
+    color: $loginColorText;
+    padding: 0 25px 0;
+  }
+
+  .login-btn {
+    height: $btnHeight;
+    width: 86px;
+    color: $loginColorText;
+    text-transform: uppercase;
+    font: normal 19px/39px Roboto, sans-serif;
+    text-decoration: none;
+  }
+}

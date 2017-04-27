@@ -1,0 +1,29 @@
+.video-section {
+  @include container(100%);
+  position: relative;
+  font-size: 0;
+
+  .video {
+    width: 100%;
+  }
+
+  .playpause {
+    background: transparent;
+    border: 19px solid rgba(173, 255, 255, .5);
+    border-radius: 50%;
+    width: 8%;
+    height: 14%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    .fa-play {
+      color: rgba(173, 255, 255, .5);
+      font-size: 40px;
+      padding-left: 10px;
+    }
+  }
+}

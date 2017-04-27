@@ -1,0 +1,79 @@
+.mailForm {
+  position: relative;
+  background: #2d3136;
+  .mail {
+    @include span(12 of 12);
+
+    &-pic {
+      @include span(3 of 11 at 5 isolate);
+      margin-top: 13%;
+    }
+  }
+  .form {
+    @include span(12 of 12);
+    padding-top: 10%;
+    &-left {
+      @include span(5);
+
+    }
+    &-right {
+      @include span(6 of 12 at 2 isolate);
+    }
+
+    .formBtn {
+      @include span(12 of 12);
+      position: relative;
+      padding-bottom: 15%;
+
+      .form-btn {
+        position: absolute;
+        right: 0;
+        height: 85px;
+        width: 230px;
+        background: #be393b;
+        border: none;
+        color: #d7d7d7;
+        font: normal 35px Roboto, sans-serif;
+        text-transform: uppercase;
+        outline: none;
+      }
+    }
+
+    &-text {
+      padding-bottom: 10px;
+      color: #d7d7d7;
+      font: normal 35px Roboto, sans-serif;
+      position: relative;
+    }
+    .required:after {
+      content: " *";
+      color: #be393b;
+      position: absolute;
+      top: -50%;
+      left: 97%;
+    }
+  }
+}
+
+#name,
+#email,
+#message {
+  margin-bottom: 44px;
+  width: 100%;
+  height: 100px;
+  font-size: 30px;
+  background: transparent;
+  color: #d7d7d7;
+  border: 3px solid #4c4f53; //#743538;
+  border-radius: 10px;
+
+  &:focus {
+    border-color: #743538;
+    outline: none;
+  }
+}
+
+#message {
+  height: 300px;
+  resize: none;
+}

@@ -1,0 +1,15 @@
+.Button {
+  display: inline-block;
+  background: #3d4b60;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    box-shadow: 0 0 5px #767676;
+  }
+
+  &:active {
+    box-shadow: 0 0 10px #767676 inset;
+  }
+}

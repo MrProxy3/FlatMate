@@ -1,0 +1,141 @@
+$colorFree: #4b596c;
+$colorProfessional: #58ad52;
+$colorEnterprise: #52a1ad;
+
+.buy {
+  background: #f6f6f7;
+
+  &-header {
+    @include span(11 of 11);
+    margin-top: 13%;
+    text-align: center;
+    font: normal 43px Roboto, sans-serif;
+    color: #37414e;
+  }
+
+  &-text {
+    @include span(11 of 11);
+    padding: 0 200px;
+    margin-bottom: 7%;
+    font: normal 22px/2 Roboto, sans-serif;
+    text-align: center;
+    color: #858b93;
+  }
+
+  &-free,
+  &-professional,
+  &-enterprise {
+    height: 725px;
+    margin-bottom: 15%;
+
+    &-header {
+      position: relative;
+      border-radius: 3px 3px 0 0;
+      height: 85px;
+      color: #fff;
+      text-align: center;
+      font: normal 34px/85px Roboto, sans-serif;
+
+      .Check {
+        position: absolute;
+        top: -30%;
+        right: -10%;
+        height: 60px;
+        width: 60px;
+        background: #f7ca52;
+        border-radius: 50%;
+
+        & > .fa-check {
+          position: absolute;
+          top: 23%;
+          left: 23%;
+        }
+      }
+    }
+
+    &-body {
+      .body-list {
+        padding: 0;
+
+        .body-list-advances {
+          list-style: none;
+          text-align: center;
+          color: #6d737b;
+          font: normal 30px/125px Roboto, sans-serif;
+          .priceColor {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  &-free {
+    @include span(3 of 11);
+
+    &-body {
+      background: #e9eef3;
+    }
+
+    &-header {
+      background: $colorFree;
+    }
+    .priceColor {
+      color: $colorFree;
+    }
+
+    .buy-btn {
+      background: $colorFree;
+    }
+  }
+
+  &-professional {
+    @include span(3 of 11 at 2 isolate);
+
+    &-body {
+      background: #deebde;
+    }
+
+    &-header {
+      background: $colorProfessional;
+    }
+
+    .priceColor {
+      color: $colorProfessional;
+    }
+
+    .buy-btn {
+      background: $colorProfessional;
+    }
+  }
+
+  &-enterprise {
+    @include span(3 of 11 at 6 isolate);
+
+    &-body {
+      background: #dee9ec;
+    }
+
+    &-header {
+      background: $colorEnterprise;
+    }
+
+    .priceColor {
+      color: $colorEnterprise;
+    }
+
+    .buy-btn {
+      background: $colorEnterprise;
+    }
+  }
+
+  .buy-btn {
+    margin-top: 25%;
+    text-decoration: none;
+    height: 80px;
+    width: 100%;
+    border-radius: 0;
+    color: #fff;
+    font: normal 34px/80px Roboto, sans-serif;
+  }
+}

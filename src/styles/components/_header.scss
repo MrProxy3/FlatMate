@@ -1,0 +1,17 @@
+.header {
+  height: 175px;
+  background: transparent;
+  &-logo, &-login {
+    height: inherit;
+  }
+  &-logo {
+    @include span(6);
+    .logo {
+      text-decoration: none;
+    }
+  }
+  &-login {
+    @include span(6 at 7);
+    text-align: right;
+  }
+}
